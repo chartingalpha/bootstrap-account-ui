@@ -30,8 +30,9 @@
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
           <div class="modal-body">
-            <a href="#" class="btn btn-default btn-block">Sign up with Facebook</a>
-            <a href="#" class="btn btn-default btn-block">Sign up with Google</a>
+            <a href="#" class="btn btn-facebook btn-block">Sign up with Facebook</a>
+            <a href="#" class="btn btn-google btn-block">Sign up with Google</a>
+            <a href="#" class="btn btn-twitter btn-block">Sign up with Twitter</a>
             <div class="separator">or</div>
             <a href="#" class="btn btn-default btn-block" data-target="#emailAccountModal" data-toggle="modal">Sign up with Email</a>
             <p>
@@ -44,12 +45,13 @@
       </div>
     </div>
     <!-- #signupModal -->
-    <div class="modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+    <div class="modal modal-account" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
           <div class="modal-body">
-            <a href="#" class="btn btn-default btn-block ">Log in with Facebook</a>
-            <a href="#" class="btn btn-default btn-block">Log in with Google</a>
+            <a href="#" class="btn btn-facebook btn-block ">Log in with Facebook</a>
+            <a href="#" class="btn btn-google btn-block">Log in with Google</a>
+            <a href="#" class="btn btn-twitter btn-block">Log in with Twitter</a>
             <div class="separator">or</div>
             <form class="form">
               <div class="form-group">
@@ -74,7 +76,7 @@
       </div>
     </div>
     <!-- #loginModal -->
-    <div class="modal" id="emailSignUpModal" tabindex="-1" role="dialog" aria-labelledby="emailSignUpModal" aria-hidden="true">
+    <div class="modal modal-account" id="emailSignUpModal" tabindex="-1" role="dialog" aria-labelledby="emailSignUpModal" aria-hidden="true">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
           <div class="modal-body">
@@ -112,9 +114,12 @@
       </div>
     </div>
     <!-- #emailSignUpModal -->
-    <div class="modal" id="passwordRecoveryModal" tabindex="-1" role="dialog" aria-labelledby="passwordRecoveryModal" aria-hidden="true">
+    <div class="modal modal-account" id="passwordRecoveryModal" tabindex="-1" role="dialog" aria-labelledby="passwordRecoveryModal" aria-hidden="true">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
+          <div class="modal-header">
+            Reset Password
+          </div>
           <div class="modal-body">
             <p>
               Enter the email address associated with your account, and
