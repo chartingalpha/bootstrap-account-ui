@@ -1,0 +1,132 @@
+<!doctype>
+<html lang="en">
+  <head>
+    <title>Bootstrap Account UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified jQuery -->
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <ul class="navbar-nav nav navbar-right">
+            <li><a href="#" data-target="#signupModal" data-toggle="modal">Create Account</a></li>
+            <li><a href="#" data-target="#loginModal" data-toggle="modal">Log In</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="modal" id="signupModal">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-body">
+            <a href="#" class="btn btn-default btn-block">Sign up with Facebook</a>
+            <a href="#" class="btn btn-default btn-block">Sign up with Google</a>
+            <div class="separator">or</div>
+            <a href="#" class="btn btn-default btn-block" data-target="#emailAccountModal" data-toggle="modal">Sign up with Email</a>
+            <p>
+              By signing up, I agree to the <a href="#">Terms of Services</a>
+              and <a href="#">Privacy Policy</a>.
+            </p>
+            <p>Already an member? <a href="#login" data-target="#loginModal" data-toggle="modal">Log in</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #signupModal -->
+    <div class="modal" id="loginModal">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-body">
+            <a href="#" class="btn btn-default btn-block ">Log in with Facebook</a>
+            <a href="#" class="btn btn-default btn-block">Log in with Google</a>
+            <div class="separator">or</div>
+            <form class="form">
+              <div class="form-group">
+                <input type="email" name="email" placeholder="Email Address" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <input type="password" name="password" placeholder="Password" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <a href="#recovery" class="pull-right" data-target="#passwordRecoveryModal" data-toggle="modal">Forgot Password?</a>
+                <label class="checkbox-inline">
+                  <input type="checkbox" name="remember" /> Remember me
+                </label>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Login" class="btn btn-default">
+              </div>
+            </form>
+            <p>Don&rsquo;t have an account? <a href="#signup" data-target="#signupModal" data-toggle="modal">Sign up</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #loginModal -->
+    <div class="modal" id="emailSignUpModal">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p class="text-center">Sign up with <a href="#">Facebook</a> or <a href="#">Google</a></p>
+            <div class="separator">or</div>
+            <form class="form">
+              <div class="form-group">
+                <input type="text" name="firstname" placeholder="First name" class="form-control" />
+              </div>
+              <div class="form-group">
+                <input type="text" name="lastname" placeholder="Last name" class="form-control" />
+              </div>
+              <div class="form-group">
+                <input type="text" name="email" placeholder="Email address" class="form-control" />
+              </div>
+              <div class="form-group">
+                <input type="password" name="password" placeholder="Password" class="form-control" />
+              </div>
+              <div class="form-group">
+                <input type="password" name="confirm" placeholder="Confirm password" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label class="checkbox-inline">
+                  <input type="checkbox" name="subscribe" /> Tell me about upcoming news
+                </label>
+              </div>
+              <p>
+                By signing up, I agree to the <a href="#">Terms of Services</a>
+                and <a href="#">Privacy Policy</a>.
+              </p>
+              <p>Already an member? <a href="#" data-target="#loginModal" data-toggle="modal">Log in</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #emailSignUpModal -->
+    <div class="modal" id="passwordRecoveryModal">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>
+              Enter the email address associated with your account, and
+              we&rsquo;ll email you a link to reset your password.
+            </p>
+            <form>
+              <div class="form-group">
+                <input type="email" name="email" placeholder="Email" class="form-control"/>
+              </div>
+              <input type="submit" value="Send Reset Link" class="btn btn-default"/>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #passwordRecoveryModal -->
+  </body>
+</html>
