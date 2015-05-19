@@ -14,8 +14,11 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
+      <nav class="navbar navbar-default">
         <div class="container">
+          <a href="#" class="navbar-brand">
+            Brand
+          </a>
           <ul class="navbar-nav nav navbar-right">
             <li><a href="#" data-target="#signupModal" data-toggle="modal">Create Account</a></li>
             <li><a href="#" data-target="#loginModal" data-toggle="modal">Log In</a></li>
@@ -23,7 +26,7 @@
         </div>
       </nav>
     </header>
-    <div class="modal" id="signupModal">
+    <div class="modal" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModal" aria-hidden="true">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
           <div class="modal-body">
@@ -41,7 +44,7 @@
       </div>
     </div>
     <!-- #signupModal -->
-    <div class="modal" id="loginModal">
+    <div class="modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
           <div class="modal-body">
@@ -62,16 +65,16 @@
                 </label>
               </div>
               <div class="form-group">
-                <input type="submit" value="Login" class="btn btn-default">
+                <input type="submit" value="Login" class="btn btn-default btn-block">
               </div>
             </form>
-            <p>Don&rsquo;t have an account? <a href="#signup" data-target="#signupModal" data-toggle="modal">Sign up</a></p>
+            <p>Don&rsquo;t have an account? <a href="#" data-target="#signupModal" data-toggle="modal">Sign up</a></p>
           </div>
         </div>
       </div>
     </div>
     <!-- #loginModal -->
-    <div class="modal" id="emailSignUpModal">
+    <div class="modal" id="emailSignUpModal" tabindex="-1" role="dialog" aria-labelledby="emailSignUpModal" aria-hidden="true">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
           <div class="modal-body">
@@ -109,7 +112,7 @@
       </div>
     </div>
     <!-- #emailSignUpModal -->
-    <div class="modal" id="passwordRecoveryModal">
+    <div class="modal" id="passwordRecoveryModal" tabindex="-1" role="dialog" aria-labelledby="passwordRecoveryModal" aria-hidden="true">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
           <div class="modal-body">
@@ -128,5 +131,13 @@
       </div>
     </div>
     <!-- #passwordRecoveryModal -->
+    <script>
+    $(function () {
+      // Hide all the modal first before showing the new one
+      $('.modal').on('show.bs.modal', function (e) {
+        $('.modal').modal('hide');
+      });
+    });
+    </script>
   </body>
 </html>
