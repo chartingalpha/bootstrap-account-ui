@@ -1,12 +1,12 @@
-.modal-account input[name=email] {
-  background-image: url('../img/at_sign.png');
+.modal-account input[type=email] {
+  background: url('../img/email.png') 98% center no-repeat;
 }
 .modal-account input[name=firstname],
 .modal-account input[name=lastname] {
-  background-image: url('../img/user.png');
+  background: url('../img/user.png') 98% center no-repeat;
 }
-.modal-account input[name=password] {
-  background-image: url('../img/lock.png');
+.modal-account input[type=password] {
+  background: url('../img/lock.png') 98% center no-repeat;
 }
 .btn-facebook {
   color: #ffffff;
